@@ -3,7 +3,7 @@ const keys = require('../config/keys');
 
 
 mongoose.Promise=global.Promise;
-mongoose.connect('mongodb://localhost:27017/River');
+mongoose.connect(keys.mongodb.URI||'mongodb://localhost:27017/Bihar');
 
 
 module.exports=mongoose;

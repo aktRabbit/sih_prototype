@@ -1,6 +1,6 @@
 const router=require('express').Router();
 const river = require('../models/river-model');
-const mongoose = require('../databases/mongoose');
+const mongoose = require('../databases/Bihar');
 
 router.get('/',(req,res)=>{
   river.find().then((doc)=>{
@@ -19,6 +19,7 @@ router.post('/',(req,res)=>{
 
 });
 river_obj.save().then((doc)=>{
+  res.send("tum pro h baba");
   console.log(doc);
 },(err)=>{
   console.log(err);
