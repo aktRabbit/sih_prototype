@@ -7,6 +7,6 @@ const riverSchema = new Schema({
     tou: String
 });
 
-const River = mongoose.model('river', riverSchema);
+const River = mongoose.model('ankit', riverSchema);
 
 module.exports = River;
